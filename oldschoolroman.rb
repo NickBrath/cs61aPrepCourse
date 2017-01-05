@@ -8,31 +8,31 @@ M = 1000
 def old_roman_numeral num 
 	roman = ''
 	while num != 0
-		if num % 1000 == 0
+		while num % 1000 == 0
 			num = num - 1000
 			roman = roman + 'M'
 		end
-		if num % 500 == 0
+		while num % 500 == 0
 			num = num - 500
 			roman = roman + 'D'
 		end
-		if num % 100 == 0
+		while num % 100 == 0
 			num = num - 100
 			roman = roman + 'C'
 		end
-		if num % 50 == 0
+		while num % 50 == 0
 			num = num - 50
 			roman = roman + 'L'
 		end
-		if num % 10 == 0
+		while num % 10 == 0
 			num = num - 10
 			roman = roman + 'X'
 		end
-		if num % 5 == 0
+		while num % 5 == 0
 			num = num - 5
 			roman = roman + 'V'
 		end
-		if num % 1 == 0
+		while num % 1 == 0
 			num = num - 1
 			roman = roman + 'I'
 		end
