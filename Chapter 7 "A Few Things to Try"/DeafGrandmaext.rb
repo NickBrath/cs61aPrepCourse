@@ -1,5 +1,6 @@
 name = ''
-string = ''
+string = 0
+puts 'Hello sweetie how can I help you?'
 while true
 	name = gets.chomp
 	if name == name.downcase || name == name.capitalize
@@ -8,9 +9,10 @@ while true
 		puts "NO, NOT SINCE 1938!"
 	end
 	if name == 'BYE'
-		string = string + 'BYE'
+		string += 1
 	end
-	if string == 'BYEBYEBYE'
+	if string == 3
+		puts 'Okay bye now honey'
 		break
 	end
 end

@@ -1,4 +1,5 @@
 name = ''
+puts 'Hello sweetie how can I help you?'
 while name != 'BYE'
 	name = gets.chomp
 	if name == name.downcase || name == name.capitalize
